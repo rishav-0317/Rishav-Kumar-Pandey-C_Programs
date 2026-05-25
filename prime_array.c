@@ -15,8 +15,16 @@ void main()
         {
             if(arr[i]%j==0)
             {
-                printf("%d ", arr[i]);
+                break;
             }
+        }
+        if(arr[i]==2 || arr[i]==3)
+        {
+            printf("%d is a prime number.\n", arr[i]);
+        }
+        else if(arr[i]%2!=0 && arr[i]%3!=0)
+        {
+            printf("%d is a prime number.\n", arr[i]);
         }
     }
 }
